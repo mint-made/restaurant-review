@@ -10,4 +10,5 @@ This app enables users to quickly discover restaurants interactively from within
 - Restaurant Info: By clicking on the map markers, more info is displayed such as address, average review and recent reviews
 - Add Review: Users can add reviews to a restaurant (data isn't submitted, only saved locally)
 - Add Restaurant: Users can add their own restaurant to the map which is displayed by a green marker (again, data isn't submitted, only saved locally)
+- Mobile friendly: All app functionality works in mobile with an easily navigatable user interface
 
