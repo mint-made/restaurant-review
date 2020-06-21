@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Restaurant Review</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="fixed">
+        <div id="tabs">
+            <div id="map-tab" class="map-active">
+                <h2>Map</h2>
+            </div>
+            <div id="review-tab" class="review-inactive">
+                <h2>Reviews</h2>
+            </div>
+        </div>
+    </div>
+    <div id="container">
+        <div id="map"></div>
+        <div id="sidebar">
+            <h2 id="sidebar-header" class="sidebar-title">Restaurant Reviews</h2>
+            <div id="sidebar-restaurants"></div>
+            <div id="sidebar-info-box"></div>
+            <h1 id="sidebar-footer" class="sidebar-title">
+                <button class="btn" id="add-restaurant-btn">Add Restaurant</button>
+            </h1>
+        </div>
+
+
+    </div>
+    <div id="legend" class="map-control"></div>
+
+
+
+
+
+
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBYnKM88MomSm_Y5OI57p8-h7x1m8C_bWQ&libraries=places">
+    </script>
+
+</body>
+
+</html>

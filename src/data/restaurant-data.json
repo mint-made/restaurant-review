@@ -1,0 +1,165 @@
+[
+    {
+        "restaurantName": "Chakalaka",
+        "address": "105a Oldham St, Manchester M4 1LW",
+        "lat": 53.483860,
+        "lng": -2.234092,
+        "type": "African",
+        "website": "http://www.chakalakabar.com/",
+        "id": "64387d8cc664b858912450c7174984217b26495e",
+        "placeId": "ChIJ764lBdyxe0gRI5kTcohiRWU",
+        "markerColor": "purple",
+        "ratings": [
+            {
+                "stars": 5,
+                "comment": "Great place, delicious food, excellent service, and friendly staff."
+            },
+            {
+                "stars": 4,
+                "comment": "Great cocktails, bar food reasonable, would have liked more meat options."
+            },
+            {
+                "stars": 5,
+                "comment": "We can’t wait to bring more people to experience a bit of South Africa."
+            }
+        ]
+    },
+    {
+        "restaurantName": "El Taquero",
+        "address": "42 Back Turner St, Manchester M4 1FR",
+        "lat": 53.483812,
+        "lng": -2.236965,
+        "type": "Mexican",
+        "website": "https://www.eltaquero.co.uk/",
+        "id": "c6a81d02432c05674ee4f8e1318765ed00c64756",
+        "placeId": "ChIJOSESyLixe0gRtAKoOlqKF2k",
+        "markerColor": "purple",
+        "ratings": [
+            {
+                "stars": 5,
+                "comment": "This restaurant offers fantastic service as well as yummy meals."
+            },
+            {
+                "stars": 5,
+                "comment": "Surf and turf tacos and the Mexican cheese and nachos starter was great."
+            },
+            {
+                "stars": 5,
+                "comment": "Very friendly staff, good prices and a very cosy environment."
+            }
+        ]
+    },
+    {
+        "restaurantName": "Dough Pizza Kitchen",
+        "address": "77 High St, Manchester M4 1FS",
+        "lat": 53.484431,
+        "lng": -2.237636,
+        "type": "Pizzaria",
+        "website": "http://doughpizzakitchen.co.uk",
+        "id": "7faea0ea18caf5ed1a9e2a9c8da8120e429fea3f",
+        "placeId": "ChIJdS4S6bixe0gRnMihMZhKkc4",
+        "markerColor": "purple",
+        "ratings": [
+            {
+                "stars": 5,
+                "comment": "Really nice decor, fast service tasty food and friendly staff."
+            },
+            {
+                "stars": 5,
+                "comment": "And yeah, good ambience, music, location, and service too."
+            },
+            {
+                "stars": 4,
+                "comment": "You are seated by a helpful waitress, handed a menu and order a beer."
+            }
+        ]
+    },
+    {
+        "restaurantName": "Pie and Ale",
+        "address": "Units 1 & 2 the Hive, 47 Lever St, Manchester M1 1FN",
+        "lat": 53.483223,
+        "lng": -2.233542,
+        "type": "British",
+        "website": "https://pieandale.com",
+        "id": "c9bf286dc3a9a07a933addce982fe63f76244f8a",
+        "placeId": "ChIJwVOcxL6xe0gRjDcDEW18W0w",
+        "markerColor": "purple",
+        "ratings": [
+            {
+                "stars": 5,
+                "comment": "Very tasty, good price, friendly, if not a bit busy, staff."
+            },
+            {
+                "stars": 4,
+                "comment": "Delish food, good service and nice drinks."
+            },
+            {
+                "stars": 2,
+                "comment": "Looking amazing but didnt taste as nice as it looked"
+            }
+        ]
+    },
+    {
+        "restaurantName": "Mackie Mayor",
+        "address": "1 Eagle St, Manchester M4 5BU",
+        "lat": 53.485461,
+        "lng": -2.234870,
+        "type": "Food Stalls",
+        "website": "http://mackiemayor.co.uk",
+        "id": "5ebf45ac748804203ec004290384aa1101438d6c",
+        "placeId": "ChIJE62nBrmxe0gRTOqPKbYl36c",
+        "markerColor": "purple",
+        "ratings": [
+            {
+                "stars": 5,
+                "comment": "Great place, lovely music, quick service, a variety of snacks, meals & drinks."
+            },
+            {
+                "stars": 5,
+                "comment": "Anything from bao buns to tacos, to pizza, steak and fresh grilled fish."
+            },
+            {
+                "stars": 5,
+                "comment": "Great atmosphere and food selection - fast service and good quality food."
+            }
+        ]
+    },
+    {
+        "restaurantName": "Almost Famous",
+        "address": "100-102 High St, Manchester M4 1HP",
+        "lat": 53.484547,
+        "lng": -2.236921,
+        "type": "Burger",
+        "website": "http://almostfamousburgers.com",
+        "id": "817d89b32a75c311bd5c2d487372e4aeaed1f565",
+        "placeId": "ChIJiTIowLixe0gRnUo9Rs1T4wM",
+        "markerColor": "purple",
+        "ratings": [
+            {
+                "stars": 1,
+                "comment": "Food is served in little plastic baskets with cooking paper, no plates."
+            },
+            {
+                "stars": 3,
+                "comment": "Tasty Burger, music was a little too loud to hear everyone at the table"
+            },
+            {
+                "stars": 1,
+                "comment": "I was expecting a lot for the price and reputation. It was smaller than I'd expected. Tasty. But just okay."
+            }
+        ]
+    },
+    {
+        "address": "20-26 Edge St, Manchester M4 1HN, United Kingdom",
+        "avgRating": "",
+        "id": "93e5b1cc53795eeaadaa9f9497030bd2e2d2d774",
+        "lat": 53.484389,
+        "lng": -2.236525,
+        "placeId": "ChIJkQGDQbmxe0gRpIBe7ebHdFM",
+        "ratings": [],
+        "restaurantName": "V Rev Places Nearby Template",
+        "type": "Vegan",
+        "markerColor": "purple",
+        "website": ""
+    }
+]

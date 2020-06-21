@@ -1,0 +1,502 @@
+$primary-color: #D5D5D5;
+$secondary-color: #ffffff;
+$tertiary-color: white;
+$border-color: rgb(138, 138, 138);
+$exit-button-color: #555555;
+$button-external-color: #9099A2;
+$button-add-review-color: #96858F;
+$button-reviews-color: #6D7993;
+$tab-border: #3a3a3a;
+
+// global styles
+html,body{
+    font-family: verdana, arial;
+    font-size: 15px;
+    height: 100%;
+    margin: 0;
+    background-color: $border-color;
+    
+}
+#fixed {
+    position: fixed;
+    width: 100%;
+    z-index: 4;
+}
+#tabs {
+    display: none;
+    width: 100%;
+    height: 40px;
+    z-index: 4;
+    display: fixed;
+    background-color: $primary-color;
+    #review-tab, #map-tab {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        background-color: $primary-color;
+    }
+.map-active {
+    z-index: 2;
+    border-style: solid;
+    border-color: $tab-border;
+    border-width: 0px 3px 2px 0px;
+    cursor: default;
+    box-shadow: 22px 0px 35px 5px rgba(0, 0, 0, 0.61);
+    border-radius: 0px 0px 10px 0px;
+    width: 51%;
+}
+.map-inactive {
+    z-index: 1;
+    border-style: solid;
+    border-color: $tab-border;
+    border-width: 0px 0px 0px 2px;
+    cursor: pointer;
+    box-shadow: none;
+    width: 49%;
+}
+.review-active {
+    z-index: 2;
+    border-style: solid;
+    border-color: $tab-border;
+    border-width: 0px 0px 2px 3px;
+    cursor: default;
+    box-shadow: -22px 0px 35px 5px rgba(0, 0, 0, 0.61);
+    border-radius: 0px 0px 0px 10px;
+    width: 51%;
+}
+.review-inactive {
+    z-index: 1;
+    border-style: solid;
+    border-color: $tab-border;
+    border-width: 0px 2px 0px 0px;
+    cursor: pointer;
+    box-shadow: none;
+    width: 49%;
+}
+}
+
+#container {
+    height: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    height: auto;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0px 2px 12px #292929;
+    -moz-box-shadow: 0px 2px 12px #292929;
+    -webkit-box-shadow: 0px 2px 12px #292929;
+    #map {
+        flex-basis: 0;
+        flex-grow: 2;
+        border-radius: 15px 0px 0px 15px;
+        z-index: 0;
+    }
+    #sidebar {
+        width: 50px;
+        z-index: 3;
+        background-color: $tertiary-color;
+        flex-basis: 0;
+        flex-grow: 1;
+        border-left: 1px solid $border-color;
+        border-radius: 0px 15px 15px 0px;
+        display: flex;
+        flex-direction: column;
+        min-width: 250px;
+        max-width: 350px;
+        #sidebar-header {
+            border-bottom: 3px solid $tab-border;
+            border-radius: 0px 15px 0px 0px;
+            
+        }
+        #sidebar-restaurants { 
+            overflow: auto;
+            flex-basis: 0;
+            flex-grow: 1;
+            padding: 0px 10px;
+            h1 {
+                margin-top: 5px;
+                margin-bottom: 10px;
+                border-bottom: 2px solid $border-color;
+                text-align: center;
+            }
+            .restaurant-listing {
+                border-bottom: 2px dotted $border-color;
+                text-align: center;
+                h3, p {
+                    margin: 0;
+                }
+            }
+        }
+        #sidebar-info-box {
+            #info-box-title {
+                display: flex;
+                padding: 0px 10px;
+                height: 40px;
+                line-height: 40px;
+                background-color: $primary-color;
+                margin: 0;
+                h2 {
+                    margin: 0;
+                    flex-basis: 0;
+                    flex-grow: 4;
+                    text-align: center;
+                }
+                .x-button {
+                    margin: auto 0;
+                    flex-basis: 0;
+                    background-color: $exit-button-color;
+                    border: 2px solid $exit-button-color;
+                }
+                .x-button:hover {
+                    background-color: $primary-color;
+                    color: $exit-button-color;
+                }
+            }
+            .resturant-image-container {
+                display: flex;
+                padding: 10px 10px 0px 10px;
+                justify-content: center;
+                .resturant-image {
+                    border-radius: 10px;
+                    width: 99%;
+                }
+            }
+            #sidebar-restaurant-info {
+                padding: 10px;
+                text-align: center;
+                height: 84%;
+                p {
+                    margin: 0;
+                }
+                h3 {
+                    border-top: 2px dotted $border-color;
+                    margin: 10px 0px;
+                    padding-top: 10px;
+                    text-decoration: underline;
+                }
+                .review {
+                    padding-bottom: 5px;
+                }
+                #add-review-container {
+                    border: 1px solid $border-color;
+                    border-radius: 5px;
+                    height: 100%;
+                    h2 {
+                        margin: 10px 0px;
+                    }
+                    p {
+                        margin-bottom: 10px;
+                    }
+                    #review-comment {
+                        width: 90%;
+                    }
+                    #review-stars {
+                        width: 40%;
+                    }
+                }
+            }
+        }
+        #sidebar-footer {
+            border-top: 3px solid $tab-border;
+            border-radius: 0px 0px 15px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            #add-restaurant-btn {
+                margin: 5px;
+                line-height: 1;
+                background-color: #2196F3;
+                border-color: #2196F3;
+                &:hover {
+                    background-color: $primary-color;
+                    color: #2196F3;
+                }
+            }
+        }
+    }
+}
+
+.py-10 {
+    padding: 10px 0px;   
+}
+.sidebar-title {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: $primary-color;
+    margin: 0;
+}
+.active-sidebar-component{
+    overflow: auto;
+    flex-basis: 0;
+    flex-grow: 3;
+    padding: 0px;
+    border-top: 3px solid $border-color;
+    box-shadow: 2px 2px 12px #292929;
+    -moz-box-shadow: 2px 2px 12px #292929;
+    -webkit-box-shadow: 2px 2px 12px #292929;
+}
+.btn {
+    display: inline-block;
+    padding: 4px 8px;
+    color: white;
+    background-color: #555555;
+    border: 2px solid #555555;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    &:hover {
+        background-color: white;
+        color: black;
+    }
+}
+.btn-external {
+    @extend .btn;
+    background-color: $button-external-color;
+    border: 2px solid $button-external-color;
+    height: 17px;
+    &:hover {
+        background-color: white;
+        color: $exit-button-color;
+    }
+}
+.btn-add-review {
+    @extend .btn;
+    background-color: $button-add-review-color;
+    border: 2px solid $button-add-review-color;
+    &:hover {
+        background-color: white;
+        color: $button-add-review-color;
+    }
+}
+.btn-reviews {
+    @extend .btn;
+    background-color: $button-reviews-color;
+    border: 2px solid $button-reviews-color;
+    &:hover {
+        background-color: white;
+        color: $button-reviews-color;
+    }
+}
+
+//Add map Controls
+
+/* Display the control once it is inside the map. */
+#map .map-control { display: block; }
+ 
+#legend {
+    /* Hide the control initially, to prevent it from appearing
+    before the map loads. */
+    display: none;
+    background-color: #fff;
+    border: 1px solid $border-color;
+    box-shadow: 0 2px 2px rgba(33, 33, 33, 0.4);
+    margin: 10px;
+    width: 150px;
+    height: 175px;
+    border-radius: 15px;
+    #marker-toggle-container {
+        text-align: center;
+    }
+    .map-control {
+        border-bottom: 1px solid $border-color;
+        padding: 5px;
+        h3 {
+            text-align: center;
+            margin: 2px;
+        }
+    }
+    #search-container {
+        border-bottom: 1px solid $border-color;
+        form.example input[type=text] {
+            padding: 11px 11px;
+            font-size: 15px;
+            width: 85px;
+            border-radius: 0px;
+            border: none;
+          }
+          form.example button {
+            width: 40px;
+            padding: 10px;
+            background: #2196F3;
+            color: white;
+            font-size: 17px;
+            border: none;
+            margin: none;
+            cursor: pointer;
+          }
+          form.example button:hover {
+            background: #0b7dda;
+          }
+    }
+    #rating-filter-container {
+        h3 {
+            margin: 5px 0px;
+            text-align: center;
+        }
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h3 {
+                padding-right: 5px;
+            }
+            #bstar-5 #astar-5 {
+                margin-right: 5px;
+            }
+            .checked {
+                color: orange;
+            }
+            .fa {
+                font-size: 20px;
+                cursor: pointer;
+            }
+        }
+        .above {
+            .fa:hover {
+                color: orange;
+            }
+        }
+        .below{
+            .fa:hover {
+                color: black;
+            }
+        }
+    }
+    #add-restaurant {
+        margin: 5px;
+        line-height: 1;
+        background-color: $button-add-review-color;
+        border-color: $button-add-review-color;
+        &:hover {
+            background-color: $primary-color;
+            color: $button-add-review-color;
+        }
+    }
+}
+
+#add-restaurant {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    p {
+        margin: 0;
+    }
+    #add-restaurant-map {
+        width: 186px;
+        height: 186px;
+        border: 1px solid $border-color;
+        border-radius: 15px;
+        margin: 7px 0px;
+    }
+    .lat-lng {
+        width: 188px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.form-width {
+    width: 170px;
+    margin-bottom: 5px;
+}
+.form-half-width {
+    width: 70px;
+    margin-bottom: 5px;
+}
+.form-textarea {
+    padding: 5px 8px;
+    height: 30px;
+}
+
+
+
+
+
+//Media Queries
+
+//mobile
+@media screen and (min-width: 50px) and (max-width: 576px) {
+    #fixed {
+        display: fixed;
+    }
+    #tabs {
+        display: flex;
+    }
+    #container {
+        margin: 0px;
+        margin: 40px 0px 0px 0px;
+        box-shadow: none;
+        
+        #sidebar {
+            #sidebar-header {
+                display: none;
+            }
+        }
+        #map {
+            border-radius: 0px;
+            border-top: 1px solid $tab-border;
+        }
+        #sidebar {
+            max-width: 600px;
+            border-top: 1px solid $tab-border;
+            border-radius: 0px;
+            #sidebar-header {
+                border-radius: 0px;
+            }
+            #sidebar-footer {
+                border-radius: 0px;
+            }
+        }
+    }
+}
+//small tablet less than 750px
+@media screen and (min-width: 576px) and (max-width: 750px) {
+    #tabs {
+        position: fixed;
+    }
+    #container #map {
+        display: block;
+    }
+    #container {
+        #legend {
+            display: block;
+        }
+        margin: 0px;
+        border-radius: 0px;
+        box-shadow: 0px 2px 12px #292929;
+        #map {
+            border-radius: 0px;
+        }
+        #sidebar {
+            #sidebar-header {
+                border-radius: 0px;
+            }
+            #sidebar-footer {
+                border-radius: 0px;
+            }
+        }
+    }
+}
+//desktop more than 750px
+@media screen and (min-width: 750px) {
+    #tabs {
+        display: none;
+    }
+    #container {
+        #legend {
+            display: block;
+        }
+    border-radius: 15px 15px 15px 15px;
+    margin: 15px;
+    }
+}
+
+
+
