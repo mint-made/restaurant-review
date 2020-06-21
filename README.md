@@ -1,3 +1,3 @@
-## Restaurant Review - An app to discover restaurant and quickly find information about them (2019)
+## Restaurant Review - An app to discover the best restaurants near you (2019)
 
 ### 
