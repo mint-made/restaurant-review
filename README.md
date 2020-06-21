@@ -21,6 +21,5 @@ This app enables users to quickly discover restaurants interactively from within
 - Mobile friendly: All app functionality works in mobile with an easily navigatable user interface
 
 ### Attribution
-```
-[js-plugin-starter-kit](https://github.com/course-one/js-plugin-starter-kit) by [thatisuday](https://github.com/thatisuday)
-```
+- [js-plugin-starter-kit](https://github.com/course-one/js-plugin-starter-kit) by [thatisuday](https://github.com/thatisuday)
+
