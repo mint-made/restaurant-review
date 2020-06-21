@@ -2,6 +2,14 @@
 ### Project Overview
 This app enables users to quickly discover restaurants interactively from within a custom Google Map, allowing the user to filter the maps markers for restaurants based on their star rating e.g. only showing ratings between 4 and 5 stars. By clicking on a map marker, the user can quickly view a restaurant's address, average rating and recent reviews.
 
+### Technologies Utilized
+- HTML / CSS
+- Webpack
+- Google Maps API
+- Places API
+- Street View API
+- Geolocation
+
 ### App features
 - Geolocation: Display restaurants close to their current location
 - Filter by ratings: Filter results based upon the average review e.g. only showing ratings between 4 and 5 stars
@@ -12,3 +20,7 @@ This app enables users to quickly discover restaurants interactively from within
 - Add Restaurant: Users can add their own restaurant to the map which is displayed by a green marker (again, data isn't submitted, only saved locally)
 - Mobile friendly: All app functionality works in mobile with an easily navigatable user interface
 
+### Attribution
+```
+[js-plugin-starter-kit](https://github.com/course-one/js-plugin-starter-kit) by [thatisuday](https://github.com/thatisuday)
+```
