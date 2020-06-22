@@ -1,6 +1,6 @@
 ## Restaurant Review - An app to discover the best restaurants near you (2019)
 ### Project Overview
-This app enables users to quickly discover restaurants interactively from within a custom Google Map, allowing the user to filter the maps markers for restaurants based on their star rating e.g. only showing ratings between 4 and 5 stars. By clicking on a map marker, the user can quickly view a restaurant's address, average rating and recent reviews.
+This app enables users to quickly discover restaurants interactively from within a custom Google Map, allowing the user to filter the restaurant map markers by their star rating e.g. only showing retaurants with ratings between 4 and 5 stars. By clicking on a map marker, the user can quickly view a restaurant's address, average rating and recent reviews.
 
 ### Technologies Utilized
 - HTML / CSS
