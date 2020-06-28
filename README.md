@@ -7,7 +7,6 @@ This app enables users to quickly discover restaurants interactively from within
 - Webpack
 - Google Maps API
 - Places API
-- Street View API
 - Geolocation
 
 ### App features
