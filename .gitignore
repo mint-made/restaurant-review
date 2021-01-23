@@ -3,5 +3,5 @@ build
 .DS_Store
 .vscode
 dist
-.gitnore
-apihelper.js
+.gitignore
+src/util/apihelper.js
